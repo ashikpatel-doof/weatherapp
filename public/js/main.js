@@ -14,7 +14,7 @@ document.querySelector('button').addEventListener('click',(e)=>{
     btn.disabled = true;
     btn.innerText = "processing"
     btn.className = 'btn-success'
-    fetch(`http://localhost:3080/weather?address=${add}`).then((response)=>{
+    fetch(`http://localhost:3000/weather?address=${add}`).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
                 console.log(data.error)
