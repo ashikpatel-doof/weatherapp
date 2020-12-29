@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href ="/css/style.css"></link>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathe App.</title>
+</head>
+<body>
+<div class="main-content mt-4">
+<header> {{>header}}</header>
+
+<div class="container mt-4 margin-auto">
+  <div class="row">
+    <div class="col-md-6">
+        <form>
+      <div>
+        <input type="text" id="add">
+      
+      
+        <button class="mt-4">Get Weather Info</button>
+</div>
+    </form>
+
+    <div class="result1 mt-3"></div>
+     <div class="result2 mt-3"></div>
+     <div class="result3 mt-3"></div>
+    </div>
+  
+  </div>
+</div>
+
+</div>
+
+  
+  <footer> {{>footer}}</footer>
+     <script src="/js/main.js"></script>
+</body>
+</html>
