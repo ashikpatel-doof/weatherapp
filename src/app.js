@@ -12,6 +12,7 @@ const publiPath = path.join(__dirname, '../public')
 const viewpath = path.join(__dirname,'../templates/views')
 const partialPath = path.join(__dirname,'../templates/partials')
  
+const PORT = process.env.PORT || 3000
 //Setting Up Express...
 const app = express()
 
@@ -111,6 +112,6 @@ app.get("*",(req,res)=>{
 })
 
 //binding port to server
-app.listen(3080, ()=>{
+app.listen(PORT, ()=>{
     console.log("Server IS up AND running")
 })
